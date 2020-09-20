@@ -9,6 +9,7 @@ class App extends React.Component {
     this.state = {
       buttonClicked: "",
       assignments: [] /*Below this line, add the students state variable*/,
+      students: [],
       grades: {}
     };
 
@@ -29,6 +30,7 @@ class App extends React.Component {
   addAssignment(assignmentName) {
     this.setState({
       assignments: this.state.assignments.concat(assignmentName)
+      
     });
   }
 
@@ -49,7 +51,7 @@ class App extends React.Component {
     let tabChoice = <div />;
 
     /*Uncomment below to render assignments*/
-    
+
     if (this.state.buttonClicked === "assignments") {
       tabChoice = (
         <List
