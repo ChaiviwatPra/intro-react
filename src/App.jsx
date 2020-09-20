@@ -82,7 +82,7 @@ class App extends React.Component {
       );
     }
 
-    /* Uncomment lines below to render grades*/
+    /* Uncomment lines below to render graddes*/
     if (this.state.buttonClicked === "grades") {
       tabChoice = (
         <Table
